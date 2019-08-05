@@ -11,8 +11,6 @@ local foodPeds = {
 
 ESX.TriggerServerCallback('callbackname', function( spawned )
 	if not spawned then
-		while true do 
-			Citizen.Wait(0)
 			for k,v in ipairs(foodPeds) do
 				RequestModel(GetHashKey(v.model))
 				while not HasModelLoaded(GetHashKey(v.model)) do
@@ -33,6 +31,5 @@ ESX.TriggerServerCallback('callbackname', function( spawned )
 				TaskPlayAnim(storePed, v.animation, v.animationName, 8.0, 0.0, -1, 1, 0, 0, 0, 0)
 				SetModelAsNoLongerNeeded(GetHashKey(v.model))
 			end
-		end
 	end
 end)
