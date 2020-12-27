@@ -8,3 +8,7 @@ Spawns a bunch of strippers in the Vanilla Unicorn on server start for maximum R
 ### Installation
 
 Download the latest version, drag the folder from the zip file into your [ESX] folder and add `start esx_strippers` to your server.cfg file.
+
+
+Edited the original based on a couple of comments from cfx.re, they are fixed now.
+change positions on config.lua
